@@ -1,0 +1,6 @@
+#忽略class文件
+*.class
+#忽略target目录
+/target
+#忽略.settings目录
+.settings/
