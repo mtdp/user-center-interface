@@ -1,6 +1,7 @@
 package me.wanx.usercenter.bean;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 
@@ -21,12 +22,18 @@ public class Resource implements Serializable {
 	private String resCode;
 	/** 1=是菜单,0=不是菜单 **/
 	private String isMenu;
+	private Integer parentId;
 	/** 1=启用,0=禁用**/
 	private String status;
 	/** 排序 **/
 	private Integer rank;
 	private String createTime;
 	private String updateTime;
+	/** 子菜单 **/
+	private List<Resource> subRes;
+	/** 菜单下的直接按钮 **/
+	private List<Resource> menuButtons;
+	
 	public Integer getResId() {
 		return resId;
 	}
@@ -57,6 +64,12 @@ public class Resource implements Serializable {
 	public void setIsMenu(String isMenu) {
 		this.isMenu = isMenu;
 	}
+	public Integer getParentId() {
+		return parentId;
+	}
+	public void setParentId(Integer parentId) {
+		this.parentId = parentId;
+	}
 	public String getStatus() {
 		return status;
 	}
@@ -82,6 +95,18 @@ public class Resource implements Serializable {
 		this.updateTime = updateTime;
 	}
 
+	public List<Resource> getSubRes() {
+		return subRes;
+	}
+	public List<Resource> getMenuButtons() {
+		return menuButtons;
+	}
+	public void setMenuButtons(List<Resource> menuButtons) {
+		this.menuButtons = menuButtons;
+	}
+	public void setSubRes(List<Resource> subRes) {
+		this.subRes = subRes;
+	}
 	@Override
 	public boolean equals(Object obj) {
 		if(null == obj){

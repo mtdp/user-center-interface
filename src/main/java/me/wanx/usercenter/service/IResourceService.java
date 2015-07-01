@@ -27,5 +27,24 @@ public interface IResourceService {
      */
     public void searchResPagination(BasePagination<Resource> resPage)throws UserCenterServiceException;
     
+    /**
+     * 获取一级菜单资源
+     * @return
+     */
+    public List<Resource> getMenuRes();
+    
+    /**
+     * 获取子菜单
+     * @return
+     */
+    public List<Resource> getSubMenuRes(Integer resId);
+    
+    /**
+	 * 获取resId菜单下的按钮
+	 * @param resId
+	 * @return
+	 */
+    public List<Resource> getButtonMenuRes(Integer resId);
+
 
 }
