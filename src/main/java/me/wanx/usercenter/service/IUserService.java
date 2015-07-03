@@ -30,6 +30,15 @@ public interface IUserService {
 	public boolean loginAction(String account,String password) throws UserCenterServiceException;
 	
 	/**
+	 * 重置密码
+	 * @param userId
+	 * @return
+	 * @throws UserCenterServiceException
+	 */
+	public boolean updatePassord(Integer userId) throws UserCenterServiceException;
+	
+	
+	/**
 	 * 保存一个用户
 	 * @param user
 	 * @throws UserCenterServiceException
