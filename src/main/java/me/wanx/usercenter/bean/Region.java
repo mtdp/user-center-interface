@@ -3,16 +3,17 @@ package me.wanx.usercenter.bean;
 import java.io.Serializable;
 
 public class Region implements Serializable {
+	
 	private static final long serialVersionUID = 7793847656724573181L;
 	
-	private String regName;
-	private String regCode;
-	private Integer regType;
-	private String regMark;
-	private String parentCode;
-	private Integer rank;
-	private String createTime;
-	private String updateTime;
+	protected String regName;
+	protected String regCode;
+	protected Integer regType;
+	protected String regMark;
+	protected String parentCode;
+	protected Integer rank;
+	protected String createTime;
+	protected String updateTime;
 	
 	public String getRegName() {
 		return regName;

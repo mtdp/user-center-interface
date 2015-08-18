@@ -15,18 +15,18 @@ public class User implements Serializable {
 	
 	private static final long serialVersionUID = 3603859709449689945L;
 	
-	private Integer userId;
-	private String userName;
-	private String account;
-	private String password;
-	private String mobile;
-	private String email;
+	protected Integer userId;
+	protected String userName;
+	protected String account;
+	protected String password;
+	protected String mobile;
+	protected String email;
 	/** 1=启用,0=禁用 **/
-	private String status;
-	private String createTime;
-	private String updateTime;
+	protected String status;
+	protected String createTime;
+	protected String updateTime;
 	/** 用户角色列表 **/
-	private List<Role> roles;
+	protected List<Role> roles;
 	
 	public Integer getUserId() {
 		return userId;

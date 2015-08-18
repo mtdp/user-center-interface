@@ -15,21 +15,21 @@ public class Role implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	private Integer roleId;
-	private String roleName;
-	private String roleCode;
+	protected Integer roleId;
+	protected String roleName;
+	protected String roleCode;
 	/** 1=启用,0=禁用 **/
-	private String status;
+	protected String status;
 	/** 创建用户id **/
-	private Integer createByUserId;
+	protected Integer createByUserId;
 	/** 最后一个update用户id**/
-	private Integer lastUpdateUserId;
-	private String createTime;
-	private String updateTime;
+	protected Integer lastUpdateUserId;
+	protected String createTime;
+	protected String updateTime;
 	/** 当前角色下的用户 **/
-	private List<User> users;
+	protected List<User> users;
 	/** 当前角色有那些资源 **/
-	private List<Resource> resources;
+	protected List<Resource> resources;
 	
 	public Integer getRoleId() {
 		return roleId;

@@ -16,23 +16,23 @@ public class Resource implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private Integer resId;
-	private String resName;
-	private String resURI;
-	private String resCode;
+	protected Integer resId;
+	protected String resName;
+	protected String resURI;
+	protected String resCode;
 	/** 1=是菜单,0=不是菜单 **/
-	private String isMenu;
-	private Integer parentId;
+	protected String isMenu;
+	protected Integer parentId;
 	/** 1=启用,0=禁用**/
-	private String status;
+	protected String status;
 	/** 排序 **/
-	private Integer rank;
-	private String createTime;
-	private String updateTime;
+	protected Integer rank;
+	protected String createTime;
+	protected String updateTime;
 	/** 子菜单 **/
-	private List<Resource> subRes;
+	protected List<Resource> subRes;
 	/** 菜单下的直接按钮 **/
-	private List<Resource> menuButtons;
+	protected List<Resource> menuButtons;
 	
 	public Integer getResId() {
 		return resId;
